@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         usersRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+            public void onDataChange(DataSnapshot snapshot) {
                 boolean found = false;
                 for (DataSnapshot userSnap : snapshot.getChildren()) {
                     String username = userSnap.child("username").getValue(String.class);
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         found = true;
                         Toast.makeText(MainActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
 
-                        // Mở màn hình tương ứng theo vai trò
+        
                         if (role.equalsIgnoreCase("admin")) {
                             Intent intent = new Intent(MainActivity.this, AdminActivity.class);
                             intent.putExtra("name", username); // truyền email để lọc lịch
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
 
-                        finish(); // đóng login
+                        finish(); 
                         break;
                     }
                 }
