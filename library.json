@@ -1,0 +1,33 @@
+{
+  "users": {
+    "1": {
+      "username": "sv01",
+      "password": "123456",
+      "role": "student"
+    },
+    "2": {
+      "username": "admin",
+      "password": "654321",
+      "role": "admin"
+    }
+  },
+  "books": {
+    "1": {
+      "title": "Lập trình Java cơ bản",
+      "author": "Nguyễn Văn A",
+      "year": 2020
+    },
+    "2": {
+      "title": "Android nâng cao",
+      "author": "Trần Thị B",
+      "year": 2022
+    },
+    "3": {
+      "title": "Cấu trúc dữ liệu & Giải thuật",
+      "author": "Lê Minh C",
+      "year": 2019
+    }
+  },
+  "borrowings":[]
+  
+}
